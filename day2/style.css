@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Filing Government App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Gov E-Filing</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="banner">
+        <h2>Welcome to the E-Filing Portal</h2>
+        <p>File your documents quickly and easily.</p>
+    </section>
+
+    <section class="form-section">
+        <h3>Submit Your Application</h3>
+        <form id="eFilingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="dob" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="confirmation" class="hidden">Your application has been submitted!</div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gov E-Filing. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
